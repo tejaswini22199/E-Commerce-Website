@@ -1,3 +1,4 @@
+from django.contrib.auth.views import LogoutView
 from django.shortcuts import render
 from .forms import sell
 from .models import sellproduct
@@ -17,4 +18,8 @@ def sellit(request):
     sellform=sell(request.POST or None)
     return render(request,'sell.html',{'form':sellform})
 def soldform(request):
+    name=request.POST.get('name',False)
+    product=request.POST.get('product',False)
+    cost=request.POST.get('cost',False)
+    allproducts=sellproduct.objects.create(name=name,product=product,cost=cost)
     return render(request,'thankyou.html')

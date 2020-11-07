@@ -9,11 +9,9 @@
 <link rel="stylesheet" href="{% static 'static/home.css' %}">
 </head>
 <body>
-    {% if user.is_authenticated %}
-    <a href="{% url 'logout' %}">Logout</a>
-    {% else %}
+    
     <a  href="{% url 'login' %}">Login</a>
-    {% endif %}
+
    
   <h1 class="heading">Why Plastic Recycling is Important??</h1>
  <div>
