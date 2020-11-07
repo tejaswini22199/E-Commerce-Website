@@ -6,4 +6,5 @@ class sellproduct(models.Model):
     product=models.CharField(max_length=100,default='What do you want to sell')
     cost=models.IntegerField()
     image=models.ImageField(null=True,blank=True,upload_to='images/')
+    issold=models.BooleanField(default=True)
     

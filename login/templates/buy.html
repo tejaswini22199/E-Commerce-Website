@@ -4,18 +4,38 @@
 <title>
     All Plastic products
 </title>
+<style>
+    .highlight
+    {
+        border:black 2px solid;
+    }
+</style>
     </head>
     <body>
+        
     {% for x in products_list %}
-    <h1>{{x.product}}</h1>
-    <div>
-        <p>
-            {{x.name}} {{x.cost}}
-        </p>
-        <img src="media\images\{{ x.image }}">
-    </div>
+    <Script>
+        removeitem=()=>
+        {
+            x.issold=false;
 
+        }
+    </Script>
+    {% if x.issold %}
+    <div class="highlight">
+        <img src="C:\Users\vakka\Desktop\Hackcbs\media\images\">
+        <h1>{{x.product}}</h1>
+        <div>
+            <h1>COST- {{x.cost}}</h1>
+        </div> 
+        <p>
+            {{x.name}} 
+        </p>
+         <a href="{% url 'productdetail' x.pk %}"></a>
+        <button class="btn-btn-secondary" onClick="removeitem()">Buy</button>
+    </div>
+    {% endif %}
     {% endfor %}
     </body>
-    }
+    
 </html>

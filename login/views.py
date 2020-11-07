@@ -10,6 +10,8 @@ def dashboard(request):
     return render(request,'login.html')
 def buy(request):
     return render(request,'buy.html')
+def productview(request):
+    return render(request,'productview.html')
 class productsView(ListView):
     def get(self,request):
         allproducts=sellproduct.objects.all()
