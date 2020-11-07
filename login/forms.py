@@ -10,5 +10,5 @@ class sell(forms.ModelForm):
             'name':forms.TextInput(attrs={'class':'form-control'}),
             'product':forms.TextInput(attrs={'class':'form-control'}),
             'cost':forms.TextInput(attrs={'class':'form-control'}),
-           
+            'phonenumber':forms.TextInput(attrs={'class':'form-control'})
         }

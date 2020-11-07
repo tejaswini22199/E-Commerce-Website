@@ -7,4 +7,5 @@ class sellproduct(models.Model):
     cost=models.IntegerField()
     image=models.ImageField(null=True,blank=True,upload_to='images/')
     issold=models.BooleanField(default=True)
+    phonenumber=models.TextField(max_length=20,default='00000000000')
     
