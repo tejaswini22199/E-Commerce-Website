@@ -9,7 +9,10 @@
 <link rel="stylesheet" href="{% static 'static\home.css' %}">
 </head>
 <body>
-    <form action="sold" method=post>
+    <form action="sold" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{form.media}}
+       
         {{form.as_p}}
         <button type="submit" class="btn-btn-primary">Submit</button>
     </form>

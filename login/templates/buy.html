@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>
+    All Plastic products
+</title>
+    </head>
+    <body>
+    {% for x in products_list %}
+    <h1>{{x.product}}</h1>
+    <div>
+        <p>
+            {{x.name}}|{{x.phonenumber}}
+        </p>
+        <img src="media/bag1.jpg">
+    </div>
+    </body>
+</html>
