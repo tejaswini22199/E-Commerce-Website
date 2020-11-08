@@ -1,0 +1,12 @@
+name: Greetings
+
+on: [pull_request, issues]
+
+jobs:
+  greeting:
+    runs-on: Any OS
+    steps:
+    - uses: Django
+      with:
+        issue-message: 'Thanks for creating issue. Will check that soon'
+        pr-message: 'Hey there Thanks for showing your interest in contributing to this project'
