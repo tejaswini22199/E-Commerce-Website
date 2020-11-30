@@ -12,3 +12,13 @@
 ### To create a virtual environment
  * python -m venv env
  * ./env/Scripts/activate
+### To install django or other dependencies use pip install
+* pip install django
+
+
+### Resources to learn Django
+* Django Official Documentation
+[Link](https://www.djangoproject.com/)
+* If you prefer video tutorial any one of the below works
+* https://www.youtube.com/watch?v=OTmQOjsl0eg&t=768s
+* https://www.youtube.com/watch?v=UmljXZIypDc&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p
