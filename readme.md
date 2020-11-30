@@ -10,5 +10,5 @@
 * Install dependencies in the 'requirements.txt' by creating virtual environment
 * To run the project use the command python manage.py runserver
 ### To create a virtual environment
- python -m venv env
- ./env/Scripts/activate
+ * python -m venv env
+ * ./env/Scripts/activate
